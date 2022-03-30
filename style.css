@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content: flex-end;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 5em;
+}
+
+.main-header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 4em;
+    background-color: #000;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.logo{
+    width: 5.75em;
+    margin-left: 2%;
+
+}
+
+.logo-img{
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    margin-left: 2%;
+    height: 5em;
+}
+.page1{
+    margin: 0.9em 0.9em 0.9em 2px;
+}
+
+.page2{
+    margin: 0.9em 0.9em 0.9em 2px;
+}
+
+.page3{
+    margin: 0.9em 0.9em 0.9em 2px;
+}
+
+.page4{
+    margin: 0.9em 0.9em 0.9em 2px;
+}
+
+.cart{
+    display: flex;
+    position: absolute;
+    width: 12em;
+    right: 0px;
+}
+
+.txtcart{
+    margin-top: 0.9em;
+    margin-right: 0.9em;
+}
+
+.cart-img{
+    width: 30%;
+    margin-top: 0.5em;
+}
+
+.slideshow{
+    overflow: hidden;
+    height: 1080px;
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.slide-wrapper{
+    width: 9600px;
+    -webkit-animation: slide 20s ease infinite;
+}
+
+.slide{
+    float: left;
+    width: 1920px;
+    height: 1080px;
+    margin-top: 63px;
+}
+
+@-webkit-keyframes slide{
+    10% {margin-left: 0px;}
+    20%{margin-left: -1920px;}
+    30%{margin-left: -1920px;}
+    40% {margin-left: -3840px;}
+    50% {margin-left: -3840px;}
+    60% {margin-left: -5760px;}
+    70% {margin-left: -5760px;}
+    80% {margin-left: -7680px;}
+    90% {margin-left: -7680px;}
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container .noi-dung{
+    margin-right: 30px;
+}
+
+footer  .container .noi-dung.about{
+    width:40%;
+}
+
+footer .container .noi-dung.about h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container .noi-dung.about h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+footer .container .noi-dung.about p{
+    color: #999;
+}
+
+.social-icon{
+    margin-top: 20px;
+    display: flex;
+}
+
+.social-icon li {
+    list-style: none;
+}
+
+.social-icon li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.social-icon li a:hover{
+    background: #f00;
+}
+
+.social-icon li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.links h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+.links{
+    position: relative;
+    width: 25%;
+}
+
+.links ul li{
+    list-style: none;
+}
+
+.links ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.links ul li a:hover{
+    color: #fff;
+}
+
+.contact h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.contact h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+
+@media  (max-width: 768px){
+    footer{
+        padding: 40px;
+             }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .noi-dung{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container, .noi-dung.about, .links, .contact{
+        width: 100%;
+    }
+}
