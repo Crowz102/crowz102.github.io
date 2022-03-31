@@ -25,7 +25,6 @@ body {
     height: 4em;
     background-color: #000;
     text-align: center;
-    opacity: 0.6;
 }
 
 .logo{
@@ -66,14 +65,10 @@ body {
     right: 0px;
 }
 
-.txtcart{
-    margin-top: 0.9em;
-    margin-right: 0.9em;
-}
-
 .cart-img{
     width: 30%;
     margin-top: 0.5em;
+    margin-left: 6em;
 }
 
 .slideshow{
@@ -139,15 +134,15 @@ footer .container .noi-dung.about h2{
     margin-bottom: 15px;
 }
 
-footer .container .noi-dung.about h2:before{
+/* footer .container .noi-dung.about h2:before{
     content: '';
     position: absolute;
     bottom: -5px;
     left: 0;
-    width: 50px;
+    width:173px;
     height: 2px;
     background: #f00;
-}
+} */
 
 footer .container .noi-dung.about p{
     color: #999;
@@ -198,7 +193,7 @@ footer .container .noi-dung.about p{
     margin-bottom: 15px;
 }
 
-.links h2::before{
+/* .links h2::before{
     content: '';
     position: absolute;
     bottom: -5px;
@@ -206,7 +201,7 @@ footer .container .noi-dung.about p{
     width: 50px;
     height: 2px;
     background: #f00;
-}
+} */
 
 .links{
     position: relative;
@@ -234,7 +229,7 @@ footer .container .noi-dung.about p{
     font-weight: 500;
     margin-bottom: 15px;
 }
-.contact h2::before{
+/* .contact h2::before{
     content: '';
     position: absolute;
     bottom: -5px;
@@ -242,7 +237,7 @@ footer .container .noi-dung.about p{
     width: 50px;
     height: 2px;
     background: #f00;
-}
+} */
 .contact{
     width: calc(35% - 60px);
     margin-right: 0 !important;
