@@ -67,7 +67,7 @@ body {
 
 .cart-img{
     width: 30%;
-    margin-top: 0.5em;
+    margin-top: 0.8em;
     margin-left: 7em;
 }
 
@@ -263,6 +263,10 @@ footer .container .noi-dung.about p{
 .contact .info li a{
     color: #999;
     text-decoration: none;
+}
+
+.fa-map-marker{
+    margin-right: 10px;
 }
 
 @media  (max-width: 768px){
