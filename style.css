@@ -269,6 +269,10 @@ footer .container .noi-dung.about p{
     margin-right: 10px;
 }
 
+.fa-envelope{
+    margin-left: -5px;
+}
+
 @media  (max-width: 768px){
     footer{
         padding: 40px;
