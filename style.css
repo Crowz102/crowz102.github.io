@@ -293,9 +293,13 @@ footer .container .noi-dung.about p{
 }
 
 @media  (max-width: 768px){
+    header {
+        height: 10em;
+    }
+
     footer{
         padding: 40px;
-             }
+    }
     footer .container{
         flex-direction: column;
     }
