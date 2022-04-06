@@ -58,6 +58,25 @@ body {
     margin: 0.9em 0.9em 0.9em 1em;
 }
 
+.search, .form-search{
+    position: absolute;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 50px;
+    margin-top: 7px;
+    float: left;
+    left: 35%;
+}
+
+.form-search{
+    padding: 10px;
+}
+
+::placeholder{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
 .cart{
     display: flex;
     position: absolute;
@@ -67,7 +86,7 @@ body {
 
 .cart-img{
     width: 30%;
-    margin-top: 0.8em;
+    margin-top: 0.7em;
     margin-left: 7em;
 }
 
