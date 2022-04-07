@@ -16,6 +16,7 @@ body {
     position: fixed;
     width: 100%;
     height: 5em;
+    z-index: 1;
 }
 
 .main-header{
@@ -70,6 +71,7 @@ body {
 
 .form-search{
     padding: 10px;
+    border-radius: 5px;
 }
 
 ::placeholder{
@@ -92,8 +94,8 @@ body {
 
 .slideshow{
     overflow: hidden;
-    height: 1060px;
-    width: 1900px;
+    height: 1100px;
+    width: 1920px;
     margin: 0 auto;
 }
 
@@ -292,7 +294,7 @@ footer .container .noi-dung.about p{
     margin-left: -5px;
 }
 
-@media  (max-width: 768px){
+@media  (max-width: 656px){
     header {
         height: 10em;
     }
@@ -311,3 +313,106 @@ footer .container .noi-dung.about p{
         width: 100%;
     }
 }
+
+/* test */
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width:20%;
+}
+
+
+.home-product {
+    margin-bottom: 10px;
+    margin-left: 5em;
+
+}
+
+
+.home-product-item {
+    background-color: white;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    transition: transform linear 0.1s;
+    will-change: transform;
+    display:block;
+    text-decoration: none;
+    padding-bottom: 6px;
+    width: 20em;
+}
+
+
+.home-product-item:hover {
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.5);
+    transform:translateY(-1px);
+}
+
+.home-product-item__img {
+    padding-top: 100%;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.home-product-item__name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.8rem;
+    height: 3.6rem;
+    margin: 10px 10px 6px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.home-product-item__price {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.home-product-item__price-old {
+    font-size: 1.4rem;
+    margin-left:10px;
+    color: #666;
+    text-decoration: line-through;
+}
+
+.home-product-item__price-current {
+    font-size: 1.6rem;
+    color: rgb(230, 26, 26);
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: roboto, arial, helvetica;
+}
+
+
+.home-product-item__origin {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 10px 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #595959;
+}
+
+.home-product-item__brand{
+    font-family: monospace;
+    font-size: 1.1rem;
+}
+
