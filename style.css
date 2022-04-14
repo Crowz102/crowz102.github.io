@@ -62,7 +62,7 @@ body {
 .search, .form-search{
     position: absolute;
     flex-wrap: wrap;
-    width: 60%;
+    width: 58%;
     height: 50px;
     margin-top: 7px;
     float: left;
@@ -79,17 +79,32 @@ body {
     text-transform: uppercase;
 }
 
-.cart{
+.user{
     display: flex;
     position: absolute;
     width: 12em;
-    right: 0px;
+    right: -3em;
+
+}
+
+.cart{
+    display: flex;
+    width: 5em;
+    height: 5em;
+    position: absolute;
+    right:0;
+    margin-top: -0.4em;
+}
+
+.user-img{
+    width: 100%;
+    margin-top: 1em;
+    margin-right: 3em;
 }
 
 .cart-img{
-    width: 30%;
+    width: 80%;
     margin-top: 0.7em;
-    margin-left: 7em;
 }
 
 .slideshow{
@@ -314,7 +329,65 @@ footer .container .noi-dung.about p{
     }
 }
 
-/* test */
+.best-product{
+    width: auto;
+    background-color: #000;
+    padding: 15px;
+    font-size: 27px;
+    color: #fff;
+    margin-right: 1.6em;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.best-seller{
+    width: auto;
+    background-color: #000;
+    padding: 15px;
+    font-size: 27px;
+    color: #fff;
+    margin-right: 1.6em;
+    margin-top: 0.5em;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.gaming{
+    width: auto;
+    background-color: #000;
+    padding: 15px;
+    font-size: 27px;
+    color: #fff;
+    margin-right: 1.6em;
+    margin-top: 0.5em;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.office{
+    width: auto;
+    background-color: #000;
+    padding: 15px;
+    font-size: 27px;
+    color: #fff;
+    margin-right: 1.6em;
+    margin-top: 0.5em;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.workstation{
+    width: auto;
+    background-color: #000;
+    padding: 15px;
+    font-size: 27px;
+    color: #fff;
+    margin-right: 1.6em;
+    margin-top: 0.5em;
+    font-family: monospace;
+    font-weight: bold;
+}
+
 .grid__row{
     display: flex;
     flex-wrap: wrap;
@@ -332,7 +405,7 @@ footer .container .noi-dung.about p{
 
 .home-product {
     margin-bottom: 10px;
-    margin-left: 5em;
+    margin-left: 3em;
 
 }
 
