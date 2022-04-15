@@ -327,6 +327,22 @@ footer .container .noi-dung.about p{
     footer .container, .noi-dung.about, .links, .contact{
         width: 100%;
     }
+
+    .header {
+        height: 150px;
+    }
+
+    .search, .form-search{
+        left: 3.5em;
+    }
+
+    .form-search{
+        width: 97%;
+    }
+
+    .content{
+        margin-top: -2.5em;
+    }
 }
 
 .best-product{

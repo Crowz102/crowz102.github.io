@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style-product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+    <link rel="shortcut icon" href="./assets/favicon-16x16.png" type="image/x-icon">
+    <title>Laptop MSI Stealth GS77 12UH 075VN</title>
+</head>
+<body>
+    <div>
+        <div class="header">
+            <div class="main-header">
+                <div class="logo">
+                    <a href="https://crowz102.github.io/"><img class="logo-img" src="./assets/logo.png" alt="logo"></a>
+                </div>
+        
+                <div class="content">
+                    <h3 class="page1" style="color: #fff; font-size:27px; font-family: monospace;" onclick="reload()">Trang Chủ</h3>
+                    <h3 class="page2" style="color: #fff; font-size:27px; font-family: monospace;">Sản Phẩm</h3>
+                    <a href="https://genk.vn/" style="text-decoration: none" target="_blank"><h3 class="page3" style="color: #fff; font-size:27px; font-family: monospace;">Tin Tức</h3></a>
+                    <a href="#footer" style="text-decoration: none"><h3 class="page4" style="color: #fff; font-size:27px; font-family: monospace;">Giới Thiệu</h3></a>
+                </div>
+                
+                <div class="search">
+                    <input type="text" class="form-search" placeholder="Nhập sản phẩm cần tìm" style="font-size: 20px; font-family: monospace;">
+                </div>
+        
+                <div class="user">
+                    <a href="./dangnhap.html" style="width: 3em;"><img class="user-img" src="./assets/user.png" alt="user"></a>
+                </div>
+                
+                <div class="cart">
+                    <img class="cart-img" src="./assets/cart.png" alt="cart">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container mt-4">
+            <div id="thongbao" class="alert alert-danger d-none face" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="container-fliud">
+                    <form name="frmsanphamchitiet" id="frmsanphamchitiet" method="post"
+                        action="/php/twig/frontend/giohang/themvaogiohang">
+                        <input type="hidden" name="sp_ma" id="sp_ma" value="5">
+                        <input type="hidden" name="sp_ten" id="sp_ten" value="Samsung Galaxy Tab 10.1 3G 16G">
+                        <input type="hidden" name="sp_gia" id="sp_gia" value="10990000.00">
+                        <input type="hidden" name="hinhdaidien" id="hinhdaidien" value="samsung-galaxy-tab-10.jpg">
+
+                        <div class="wrapper row">
+                            <div class="preview col-md-6">
+                                <div class="preview-pic tab-content">
+                                    <div class="tab-pane active" id="pic-3">
+                                        <img src="https://cdn.ankhang.vn/media/product/20978_laptop_msi_stealth_gs77_12uh_075vn_4.jpg">
+                                    </div>
+                                </div>
+                                <!-- <ul class="preview-thumbnail nav nav-tabs">
+                                    <li class="active">
+                                        <a data-target="#pic-1" data-toggle="tab" class="">
+                                            <img src="./assets/asus-rog.jpg">
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a class="">
+                                            <img src="./assets/asus-rog.jpg">
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a data-target="#pic-3" data-toggle="tab" class="active">
+                                            <img src="../assets/img/product/samsung-galaxy-tab-4.jpg">
+                                        </a>
+                                    </li>
+                                </ul> -->
+                            </div>
+                            <div class="details col-md-6">
+                                <h3 class="product-title">Laptop MSI Stealth GS77 12UH 075VN</h3>
+                                <div class="rating">
+                                    <span></span>
+                                    <div class="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                </div>
+                                <span class="product-description">Display: 17.3" QHD 240Hz 100% sRGB DCI-P3 <br>
+                                    CPU: Intel Core i9-12900H <br>
+                                    VGA: RTX 3080 Max-Q 8GB GDDR6<br>
+                                    RAM: 32GB DDR5 3200MHz <br>
+                                    SSD: 2TB NVMe</span>
+                                <span class="text-muted">Giá cũ: <s><span>89.990.000đ</span></s></span>
+                                <h4 class="price">Giá hiện tại: <span>84.590.000đ</span></h4>
+
+                                <div class="form-group">
+                                    <label for="soluong">Số lượng đặt mua:</label>
+                                    <input type="number" class="form-control" id="soluong" name="soluong" value="1" style="width:4em;">
+                                </div>
+                                <div class="action">
+                                    <!-- <a class="add-to-cart btn btn-default" id="btnThemVaoGioHang">Thêm vào giỏ hàng</a> -->
+                                    <input class="add-to-cart btn btn-default" type="button" value="Thêm vào giỏ hàng" style="background-color: #000; color: #fff">
+                                    <a class="like btn btn-default" href="#"><span class="fa fa-heart"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-fluid">
+                    <h3>Thông tin chi tiết về sản phẩm</h3>
+                    <div class="row">
+                        <div class="col">
+                            asdasd
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+          <div class="noi-dung about">
+            <h2 style="font-size: 30px; font-family: monospace">Về Chúng Tôi</h2>
+            <p style="font-size: 20px; font-family: monospace">Nhóm chúng tôi đến từ lớp 21AD với các thành viên: <br> Lê Đức Thiện - 21AD056 <br> Hoàng Hữu Tiến Đạt - 21AD011</p>
+            <p style="font-size: 20px; font-family: monospace">Trang web là sản phẩm đồ án của nhóm chúng mình</p>
+            <ul class="social-icon">
+              <li><a href="https://www.facebook.com/Crowz.102/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://github.com/Crowz102" target="_blank"><i class="fa fa-github-square"></i></a></li>
+            </ul>
+          </div>
+    
+          <div class="noi-dung links">
+            <h2 style="font-size: 30px; font-family: monospace">Đường dẫn</h2>
+            <ul>
+              <li style="font-size: 20px; font-family: monospace"><a href="#">Trang Chủ</a></li>
+              <li style="font-size: 20px; font-family: monospace"><a href="#">Về Chúng Tôi</a></li>
+              <li style="font-size: 20px; font-family: monospace"><a href="#">Thông Tin Liên Lạc</a></li>
+              <li style="font-size: 20px; font-family: monospace"><a href="#">Dịch Vụ</a></li>
+              <li style="font-size: 20px; font-family: monospace"><a href="#">Điều Kiện Chính Sách</a></li>
+            </ul>
+          </div>
+    
+          <div class="noi-dung contact"> 
+            <h2 style="font-size: 30px; font-family: monospace">Thông Tin Liên Hệ</h2>
+            <ul class="info">
+              <li>
+                <span><i class="fa fa-map-marker"></i></span>
+                <span style="font-size: 20px; font-family: monospace">470 Trần Đại Nghĩa <br> Hoà Hải, Ngũ Hành Sơn <br> Đà Nẵng, Việt Nam</span>
+              </li>
+              <li>
+                <span><i class="fa fa-phone"></i></span>
+                <p style="color: #999; font-size: 20px; font-family: monospace">+84 904 437 508 <br> +84 824 128 246</p>
+              </li>
+              <li>
+                <span><i class="fa fa-envelope"></i></span>
+                <p style="font-size: 20px; font-family: monospace"><a onClick="javascript:window.open('mailto:thienld.21ad@vku.udn.vn', 'my-window');event.preventDefault()" href="mailto:thienld.21ad@vku.udn.vn">thienld.21ad@vku.udn.vn</a></p>
+              </li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
