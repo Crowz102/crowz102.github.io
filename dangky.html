@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-dangnhap.css">
+    <link rel="stylesheet" href="style-dangky.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="./assets/favicon-16x16.png" type="image/x-icon">
     <title>Đăng nhập</title>
@@ -16,20 +16,27 @@
             <path fill="none" d="M0 0h24v24H0z"></path>
             <path fill="currentColor" d="M4 15h2v5h12V4H6v5H4V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6zm6-4V8l5 4-5 4v-3H2v-2h8z"></path>
           </svg>
-          <h1 class="form_heading">Đăng Nhập</h1>
+          <h1 class="form_heading">Đăng Ký</h1>
         </div>
         <div class="field">
-          <label for="username" style="font-size: 20px;">Tên đăng nhập hoặc Email</label>
+          <label for="username" style="font-size: 20px;">Tên đăng nhập</label>
           <input class="input" name="username" type="text" placeholder="Username" id="username">
+        </div>
+        <div class="field">
+          <label for="username" style="font-size: 20px;">Email</label>
+          <input class="input" name="email" type="email" placeholder="Email" id="username">
         </div>
         <div class="field">
           <label for="password" style="font-size: 20px;">Mật khẩu</label>
           <input class="input" name="user_password" type="password" placeholder="Password" id="password">
         </div>
         <div class="field">
-          <button class="button">Login</button>
+          <label for="password" style="font-size: 20px;">Nhập lại mật khẩu</label>
+          <input class="input" name="user_password" type="password" placeholder="Password" id="password">
         </div>
-        <span>Bạn chưa có tài khoản? <a href="./dangky.html" style="text-decoration: none">Đăng ký ngay</a></span> <br><br>
+        <div class="field">
+          <button class="button">Đăng ký</button>
+        </div>
         <a href="./index.html" style="text-decoration: none"><span><i>Trang chủ</i></span></a>
     </form>
 </body>
