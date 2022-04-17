@@ -180,6 +180,34 @@ footer .container .noi-dung.about h2{
     background: #f00;
 } */
 
+.ico-product{
+    position: absolute;
+    right: 0px;
+    margin: 10px 10px 0 0;
+    padding: 5px 16px;
+    background: red;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.onsale{
+    display: inline-flex;
+    align-items: center;
+    margin: 10px 0 0 10px;
+    height: 1.7rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    line-height: normal;
+    padding: 0 0.25rem;
+    border-radius: 0.125rem;
+    background: linear-gradient(-90deg,#ec1f1f 0,#ff9c00 100%);
+    position: absolute;
+}
+
 footer .container .noi-dung.about p{
     color: #999;
     line-height: 1.6em;
