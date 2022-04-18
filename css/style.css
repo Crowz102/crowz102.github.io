@@ -180,6 +180,27 @@ footer .container .noi-dung.about h2{
     background: #f00;
 } */
 
+@-webkit-keyframes ico{
+    0% { color: #F8CD0A; } 
+    50% { color: #fff;  } 
+    100% { color: #F8CD0A;  } 
+}
+@-moz-keyframes ico{ 
+    0% { color: #F8CD0A;  } 
+    50% { color: #fff;  }
+    100% { color: #F8CD0A;  } 
+}
+@-o-keyframes ico{ 
+    0% { color: #F8CD0A; } 
+    50% { color: #fff; } 
+    100% { color: #F8CD0A;  } 
+}
+@keyframes ico{ 
+    0% { color: #F8CD0A;  } 
+    50% { color: #fff;  }
+    100% { color: #F8CD0A;  } 
+} 
+
 .ico-product{
     position: absolute;
     right: 0px;
@@ -189,6 +210,10 @@ footer .container .noi-dung.about h2{
     color: #FFF;
     font-weight: bold;
     font-size: 20px;
+    -webkit-animation:ico 700ms infinite;
+	-moz-animation: ico 700ms infinite; 
+	-o-animation: ico 700ms infinite; 
+	animation: ico 700ms infinite;
 }
 
 .onsale{
