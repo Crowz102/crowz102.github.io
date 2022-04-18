@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style-cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+    <link rel="shortcut icon" href="./assets/favicon-16x16.png" type="image/x-icon">
+    <title>Giỏ hàng</title>
+</head>
+<body>
+    <div>
+        <div class="header">
+            <div class="main-header">
+                <div class="logo">
+                    <a href="https://crowz102.github.io/"><img class="logo-img" src="./assets/logo.png" alt="logo"></a>
+                </div>
+        
+                <div class="content">
+                    <h3 class="page1" style="color: #fff; font-size:27px; font-family: monospace;" onclick="reload()">Trang Chủ</h3>
+                    <h3 class="page2" style="color: #fff; font-size:27px; font-family: monospace;">Sản Phẩm</h3>
+                    <a href="https://genk.vn/" style="text-decoration: none" target="_blank"><h3 class="page3" style="color: #fff; font-size:27px; font-family: monospace;">Tin Tức</h3></a>
+                    <a href="#footer" style="text-decoration: none"><h3 class="page4" style="color: #fff; font-size:27px; font-family: monospace;">Giới Thiệu</h3></a>
+                </div>
+                
+                <div class="search">
+                    <input type="text" class="form-search" placeholder="Nhập sản phẩm cần tìm" style="font-size: 20px; font-family: monospace;">
+                </div>
+        
+                <div class="user">
+                    <a href="./dangnhap.html" style="width: 3em;"><img class="user-img" src="./assets/user.png" alt="user"></a>
+                </div>
+                
+                <div class="cart">
+                    <img class="cart-img" src="./assets/cart.png" alt="cart">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+		<div id="wrap-cart" class="container">
+			<!-- Begin empty cart -->
+			<div class="row">
+				<div id="layout-page-card" class="container">
+					<span class="header-page clearfix">
+						<h1 class="title-card">Giỏ hàng</h1></span>
+					<form action="/cart" method="post" id="cartformpage">
+						<table width="100%" style="text-align: center">
+							<thead>
+								<tr>
+									<th class="image">Sản phẩm</th>
+									<th class="item">Tên sản phẩm</th>
+									<th class="qty">Số lượng</th>
+									<th class="price">Giá tiền</th>
+									<th class="remove">Xoá</th>
+								</tr>
+							</thead>
+							<tbody>
+								
+								<tr>
+									<td class="image">
+										<div class="product_image">
+											<a href="./product1.html">
+												<img src="https://hanoicomputercdn.com/media/product/64345_laptop_asus_gaming_rog_strix_g513rm_13.jpeg" style="width:12em;">
+											</a>
+										</div>
+									</td>
+									<td class="item">
+										<a href="./product1.html">
+											<strong>Laptop Asus Gaming ROG Strix G513IE-HN192W</strong>
+											
+										</a>
+									</td>
+									<td class="qty">
+										<input type="number" size="4" name="updates[]" min="1" id="updates_1081348044" value="1" onfocus="this.select();" class="tc item-quantity" style="width: 5em;">
+									</td>
+									<td class="price">30.790.000Đ</td>
+
+									<td class="remove">
+                                        <i class="fa fa-trash"></i>
+									</td>
+								</tr>
+								
+								<tr class="summary">
+									<td colspan="4" style="font-weight: bold; font-size: 20px;">Tổng tiền:</td>
+									
+									<td class="price">
+										<span class="total">
+											<strong>30.790.000Đ</strong>
+										</span>
+									</td>								
+								</tr>
+
+
+								<tr class="summary">
+									<td colspan="5" style="font-weight: bold; font-size: 20px;">
+										<div class="cartnote"></div>
+										<textarea id="note" name="note" rows="8" cols="50" placeholder="Ghi chú" style="margin: 0px;height: 70px;border-color: #6498cd;border-width: 1px; width: 92%"></textarea>
+										
+									</td>					
+								</tr>
+							</tbody>
+						</table>
+						<div class="col-md-6 cart-buttons inner-right inner-left">
+							<div class="buttons">
+								<button type="button" id="checkout" class="button-default" name="checkout" value="">Thanh toán</button>
+								<button type="button" id="update-cart" class="button-default" name="update" value="">Cập nhật</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <footer id="footer">
+        <div class="container">
+          <div class="noi-dung about">
+            <h2 style="font-size: 30px; font-family: monospace">Về Chúng Tôi</h2>
+            <p style="font-size: 20px; font-family: monospace">Nhóm chúng tôi đến từ lớp 21AD với các thành viên: <br> Lê Đức Thiện - 21AD056 <br> Hoàng Hữu Tiến Đạt - 21AD011</p>
+            <p style="font-size: 20px; font-family: monospace">Trang web là sản phẩm đồ án của nhóm chúng mình</p>
+            <ul class="social-icon">
+              <li><a href="https://www.facebook.com/Crowz.102/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://github.com/Crowz102" target="_blank"><i class="fa fa-github-square"></i></a></li>
+            </ul>
+          </div>
+    
+          <div class="noi-dung links">
+            <h2 style="font-size: 30px; font-family: monospace">Đường dẫn</h2>
+            <ul>
+              <li style="font-size: 20px; font-family: monospace"><a href="#">Trang Chủ</a></li>
+              <li style="font-size: 20px; font-family: monospace"><a href="#">Về Chúng Tôi</a></li>
+              <li style="font-size: 20px; font-family: monospace"><a href="#">Thông Tin Liên Lạc</a></li>
+              <li style="font-size: 20px; font-family: monospace"><a href="#">Dịch Vụ</a></li>
+              <li style="font-size: 20px; font-family: monospace"><a href="#">Điều Kiện Chính Sách</a></li>
+            </ul>
+          </div>
+    
+          <div class="noi-dung contact"> 
+            <h2 style="font-size: 30px; font-family: monospace">Thông Tin Liên Hệ</h2>
+            <ul class="info">
+              <li>
+                <span><i class="fa fa-map-marker"></i></span>
+                <span style="font-size: 20px; font-family: monospace">470 Trần Đại Nghĩa <br> Hoà Hải, Ngũ Hành Sơn <br> Đà Nẵng, Việt Nam</span>
+              </li>
+              <li>
+                <span><i class="fa fa-phone"></i></span>
+                <p style="color: #999; font-size: 20px; font-family: monospace">+84 904 437 508 <br> +84 824 128 246</p>
+              </li>
+              <li>
+                <span><i class="fa fa-envelope"></i></span>
+                <p style="font-size: 20px; font-family: monospace"><a onClick="javascript:window.open('mailto:thienld.21ad@vku.udn.vn', 'my-window');event.preventDefault()" href="mailto:thienld.21ad@vku.udn.vn">thienld.21ad@vku.udn.vn</a></p>
+              </li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
