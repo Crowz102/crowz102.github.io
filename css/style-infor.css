@@ -109,6 +109,11 @@ body {
     margin-top: 0.7em;
 }
 
+.header-page > h3{
+    margin-bottom: 20px;
+}
+
+
 div .row-1{
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 5px;
@@ -116,7 +121,7 @@ div .row-1{
 }
 
 .row-1 > input{
-    width: 95%;
+    width: 100%;
     border: 1px solid rgba(0,0,0,.125);
     padding: 2px;
     font-size: 20px;
@@ -131,7 +136,7 @@ div .email{
     border-radius: 5px;
     padding: 5px 15px 10px 15px;
     margin: 15px 0 15px 0;
-    width: 80%;
+    width: 65%;
 }
 
 div .phone{
@@ -139,6 +144,7 @@ div .phone{
     border-radius: 5px;
     padding: 5px 15px 10px 15px;
     margin: 15px 0 15px 20px;
+    width: 35%;
 }
 
 div .address{
@@ -214,6 +220,7 @@ div .row-5{
     border: 1px solid rgba(0,0,0,.125);
     padding: 2px;
     font-size: 20px;
+    width: 100%;
 }
 
 .address > input{
@@ -246,7 +253,7 @@ input[type="tel"]{
 }
 
 div .row{
-    border: 1px solid rgba(0,0,0,.125);
+    margin-top: -2em;
 }
 
 .title-card{
