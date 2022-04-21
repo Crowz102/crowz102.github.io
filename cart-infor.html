@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style-infor.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+    <link rel="shortcut icon" href="./assets/favicon-16x16.png" type="image/x-icon">
+    <title>Giỏ hàng</title>
+</head>
+<body>
+    <div>
+        <div class="header">
+            <div class="main-header">
+                <div class="logo">
+                    <a href="https://crowz102.github.io/"><img class="logo-img" src="./assets/logo.png" alt="logo"></a>
+                </div>
+        
+                <div class="content">
+                    <a href="https://crowz102.github.io/" style="text-decoration: none;"><a href="https://crowz102.github.io/"><h3 class="page1" style="color: #fff; font-size:27px; font-family: monospace;" onclick="reload()">Trang Chủ</h3></a>
+                    <h3 class="page2" style="color: #fff; font-size:27px; font-family: monospace;">Sản Phẩm</h3>
+                    <a href="https://genk.vn/" style="text-decoration: none" target="_blank"><h3 class="page3" style="color: #fff; font-size:27px; font-family: monospace;">Tin Tức</h3></a>
+                    <a href="#footer" style="text-decoration: none"><h3 class="page4" style="color: #fff; font-size:27px; font-family: monospace;">Giới Thiệu</h3></a>
+                </div>
+                
+                <div class="search">
+                    <input type="text" class="form-search" placeholder="Nhập sản phẩm cần tìm" style="font-size: 20px; font-family: monospace;">
+                </div>
+        
+                <div class="user">
+                    <a href="./dangnhap.html" style="width: 3em;"><img class="user-img" src="./assets/user.png" alt="user"></a>
+                </div>
+                
+                <div class="cart">
+                    <img class="cart-img" src="./assets/cart.png" alt="cart">
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div class="container">
+		<div id="wrap-cart" class="container">
+			  <!-- Begin empty cart -->
+      <h1 class="title-card">Thông tin thanh toán</h1>
+			<div class="row">
+				<div id="layout-page-card" class="container">
+					<span class="header-page clearfix">
+            <h3>Thông tin giao hàng</h3>
+            <form action="">
+              <div class="row-1">
+                <label for="name" style="font-size: 20px; color: #bbb3b3">Họ và tên</label> <br>
+                <input type="text" name="name" id="fld-name" spellcheck="off">
+              </div>
+
+              <div class="row-2">
+                <div class="email">
+                  <label for="email" style="font-size: 20px; color: #bbb3b3">Email</label> <br>
+                  <input type="email" name="email" id="fld-email">
+                </div>
+                
+                <div class="phone">
+                  <label for="phone" style="font-size: 20px; color: #bbb3b3">Số điện thoại</label> <br>
+                  <input type="tel" name="phone" id="fld-phone">
+                </div>
+              </div>
+
+              <div class="address">
+                <label for="address" style="font-size: 20px; color: #bbb3b3">Địa chỉ</label> <br>
+                <input type="text" name="address" id="fld-address">
+              </div>
+
+              <div class="row-3">
+                <div class="country">
+                  <label for="country" style="font-size: 20px; color: #bbb3b3">Tỉnh / thành</label> <br>
+                  <select name="country" id="slt-country">
+                    <option data-code="null" value="null" selected="">Chọn tỉnh / thành </option>
+                    <option data-code="HC" value="50">Hồ Chí Minh</option>
+										<option data-code="HI" value="1">Hà Nội</option>
+										<option data-code="DA" value="32">Đà Nẵng</option>
+										<option data-code="AG" value="57">An Giang</option>
+										<option data-code="BV" value="49">Bà Rịa - Vũng Tàu</option>
+										<option data-code="BI" value="47">Bình Dương</option>
+										<option data-code="BP" value="45">Bình Phước</option>
+										<option data-code="BU" value="39">Bình Thuận</option>
+										<option data-code="BD" value="35">Bình Định</option>
+										<option data-code="BL" value="62">Bạc Liêu</option>
+										<option data-code="BG" value="15">Bắc Giang</option>
+										<option data-code="BK" value="4">Bắc Kạn</option>
+										<option data-code="BN" value="18">Bắc Ninh</option>
+										<option data-code="BT" value="53">Bến Tre</option>
+										<option data-code="CB" value="3">Cao Bằng</option>
+										<option data-code="CM" value="63">Cà Mau</option>
+										<option data-code="CN" value="59">Cần Thơ</option>
+										<option data-code="GL" value="41">Gia Lai</option>
+										<option data-code="HG" value="2">Hà Giang</option>
+										<option data-code="HM" value="23">Hà Nam</option>
+										<option data-code="HT" value="28">Hà Tĩnh</option>
+										<option data-code="HO" value="11">Hòa Bình</option>
+										<option data-code="HY" value="21">Hưng Yên</option>
+										<option data-code="HD" value="19">Hải Dương</option>
+										<option data-code="HP" value="20">Hải Phòng</option>
+										<option data-code="HU" value="60">Hậu Giang</option>
+										<option data-code="KH" value="37">Khánh Hòa</option>
+										<option data-code="KG" value="58">Kiên Giang</option>
+										<option data-code="KT" value="40">Kon Tum</option>
+										<option data-code="LI" value="8">Lai Châu</option>
+										<option data-code="LA" value="51">Long An</option>
+										<option data-code="LO" value="6">Lào Cai</option>
+										<option data-code="LD" value="44">Lâm Đồng</option>
+										<option data-code="LS" value="13">Lạng Sơn</option>
+										<option data-code="ND" value="24">Nam Định</option>
+										<option data-code="NA" value="27">Nghệ An</option>
+										<option data-code="NB" value="25">Ninh Bình</option>
+										<option data-code="NT" value="38">Ninh Thuận</option>
+										<option data-code="PT" value="16">Phú Thọ</option>
+										<option data-code="PY" value="36">Phú Yên</option>
+										<option data-code="QB" value="29">Quảng Bình</option>
+										<option data-code="QM" value="33">Quảng Nam</option>
+										<option data-code="QG" value="34">Quảng Ngãi</option>
+										<option data-code="QN" value="14">Quảng Ninh</option>
+										<option data-code="QT" value="30">Quảng Trị</option>
+										<option data-code="ST" value="61">Sóc Trăng</option>
+										<option data-code="SL" value="9">Sơn La</option>
+										<option data-code="TH" value="26">Thanh Hóa</option>
+										<option data-code="TB" value="22">Thái Bình</option>
+										<option data-code="TY" value="12">Thái Nguyên</option>
+										<option data-code="TT" value="31">Thừa Thiên Huế</option>
+										<option data-code="TG" value="52">Tiền Giang</option>
+										<option data-code="TV" value="54">Trà Vinh</option>
+										<option data-code="TQ" value="5">Tuyên Quang</option>
+										<option data-code="TN" value="46">Tây Ninh</option>
+										<option data-code="VL" value="55">Vĩnh Long</option>
+										<option data-code="VT" value="17">Vĩnh Phúc</option>
+										<option data-code="YB" value="10">Yên Bái</option>
+										<option data-code="DB" value="7">Điện Biên</option>
+										<option data-code="DC" value="42">Đắk Lắk</option>
+										<option data-code="DO" value="43">Đắk Nông</option>
+										<option data-code="DN" value="48">Đồng Nai</option>
+										<option data-code="DT" value="56">Đồng Tháp</option>
+                  </select>
+                </div>
+
+                <div class="quan">
+                  <label for="quan" style="font-size: 20px; color: #bbb3b3">Quận / huyện</label> <br>
+                  <input type="text" name="quan" id="fld-quan">
+                </div>
+              </div>
+            </form>
+            <h3 style="margin-bottom: 20px;">Phương thức vận chuyển</h3>
+            <form action="">
+              <div class="row-4">
+                <input type="radio" checked="checked"> 
+                <label for="row-4">Giao hàng tận nơi</label>
+              </div>
+            </form>
+            <h3 style="margin-bottom: 20px;">Phương thức thanh toán</h3>
+            <form action="">
+              <div class="payment">
+                <div class="row-5">
+                  <div class="money">
+                    <input type="radio" name="pay" style="width:20px; height:20px;" checked="checked">
+                    <label for="row-5" style="font-size: 25px;">Thanh toán khi giao hàng (COD)</label> <br>
+                  </div>
+                  <div class="visa">
+                    <input type="radio" name="pay" style="width:20px; height:20px; margin-top: 15px;">
+                    <label for="row-5" style="font-size: 25px;">Thanh toán bằng thẻ quốc tế (Visa)</label> <br>
+                  </div>
+                  <div class="atm">
+                    <input type="radio" name="pay" style="width:20px; height:20px; margin-top: 15px;">
+                    <label for="row-5" style="font-size: 25px;">Thanh toán bằng thẻ nội địa (ATM)</label>
+                  </div>
+                </div>
+
+                <div class="card_pay">
+                  <img src="https://tinhte2.cdnforo.com/data/iframes/credit_card_overview/assets/popular_credit_institution.png" alt="payment_card" style="width:100%">
+                </div>
+              </div>
+            </form>
+
+            <div class="end">
+              <div class="back">
+                <a href="./cart.html" style="text-decoration:none;"><span> &#9204;Quay lại giỏ hàng</span></a>
+              </div>
+  
+              <div class="buttons">
+                <input class="button" type="button" value="Hoàn tất đơn hàng">
+              </div>
+            </div>
+          </span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <footer id="footer">
+        <div class="container">
+          <div class="noi-dung about">
+            <h2 style="font-size: 30px; font-family: monospace">Về Chúng Tôi</h2>
+            <p style="font-size: 20px; font-family: monospace">Nhóm chúng tôi đến từ lớp 21AD với các thành viên: <br> Lê Đức Thiện - 21AD056 <br> Hoàng Hữu Tiến Đạt - 21AD011</p>
+            <p style="font-size: 20px; font-family: monospace">Trang web là sản phẩm đồ án của nhóm chúng mình</p>
+            <ul class="social-icon">
+              <li><a href="https://www.facebook.com/Crowz.102/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://github.com/Crowz102" target="_blank"><i class="fa fa-github-square"></i></a></li>
+            </ul>
+          </div>
+    
+          <div class="noi-dung links">
+            <h2 style="font-size: 30px; font-family: monospace">Đường dẫn</h2>
+            <ul>
+              <li style="font-size: 20px; font-family: monospace"><a href="#">Trang Chủ</a></li>
+              <li style="font-size: 20px; font-family: monospace"><a href="#">Về Chúng Tôi</a></li>
+              <li style="font-size: 20px; font-family: monospace"><a href="#">Thông Tin Liên Lạc</a></li>
+              <li style="font-size: 20px; font-family: monospace"><a href="#">Dịch Vụ</a></li>
+              <li style="font-size: 20px; font-family: monospace"><a href="#">Điều Kiện Chính Sách</a></li>
+            </ul>
+          </div>
+    
+          <div class="noi-dung contact"> 
+            <h2 style="font-size: 30px; font-family: monospace">Thông Tin Liên Hệ</h2>
+            <ul class="info">
+              <li>
+                <span><i class="fa fa-map-marker"></i></span>
+                <span style="font-size: 20px; font-family: monospace">470 Trần Đại Nghĩa <br> Hoà Hải, Ngũ Hành Sơn <br> Đà Nẵng, Việt Nam</span>
+              </li>
+              <li>
+                <span><i class="fa fa-phone"></i></span>
+                <p style="color: #999; font-size: 20px; font-family: monospace">+84 904 437 508 <br> +84 824 128 246</p>
+              </li>
+              <li>
+                <span><i class="fa fa-envelope"></i></span>
+                <p style="font-size: 20px; font-family: monospace"><a onClick="javascript:window.open('mailto:thienld.21ad@vku.udn.vn', 'my-window');event.preventDefault()" href="mailto:thienld.21ad@vku.udn.vn">thienld.21ad@vku.udn.vn</a></p>
+              </li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

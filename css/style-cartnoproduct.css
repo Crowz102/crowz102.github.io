@@ -345,64 +345,6 @@ footer .container .noi-dung.about p{
     margin-bottom: 0.7em;
 }
 
-.remove i {
-    color: black;
-}
-
-/* .fa-trash:before {
-    content: "\f1f8";
-} */
-
-#layout-page-card #cartformpage table td, #layout-page-card #cartformpage table th {
-    border-right: 1px solid #f0f0f0;
-    border-left: 1px solid #f0f0f0;
-    text-align: center;
-    padding: 20px 0px;
-}
-
-td {
-    display: table-cell;
-    vertical-align: inherit;
-}
-
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transform: translate(0, 0);
-}
-
-.button-default{
-    padding: 1.2em 1.5em;
-    border: none;
-    text-transform: UPPERCASE;
-    font-weight: bold;
-    -webkit-transition: background .3s ease;
-    transition: background .3s ease;
-}
-
-.button-default:hover{
-    background-color: #000;
-    color: white;
-    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.5);
-    transform:translateY(-1px);
-}
-
-.col-md-6, .cart-buttons, .inner-right, .inner-left{
-    position: relative;
-    left: 37%;
-}
-
-.buttons{
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
 .container {
     padding-right: 15px;
     padding-left: 15px;
