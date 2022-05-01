@@ -45,6 +45,7 @@ body {
 }
 .page1{
     margin: 0.9em 0.9em 0.9em 1em;
+    text-decoration: none;
 }
 
 .page2{
@@ -72,6 +73,7 @@ body {
 .form-search{
     padding: 10px;
     border-radius: 5px;
+    outline: none;
 }
 
 ::placeholder{
