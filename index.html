@@ -33,7 +33,30 @@
         </div>
 
         <div class="user">
-          <a href="./dangnhap.html" style="width: 3em;"><img class="user-img" src="./assets/user.png" alt="user"></a>
+          <button id="popup-btn" style="opacity:100%;width: 3.5em;background-color:black;"><img class="user-img" src="./assets/user.png" alt="user"></button>
+          <div class="popup">
+            <form class="form card">
+              <div class="card_header">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor" d="M4 15h2v5h12V4H6v5H4V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6zm6-4V8l5 4-5 4v-3H2v-2h8z"></path>
+                </svg>
+                <h1 class="form_heading">Đăng Nhập</h1>
+              </div>
+              <div class="field">
+                <label for="username" style="font-size: 20px; margin-left:-120px; margin-bottom:5px">Tên đăng nhập hoặc Email</label>
+                <input class="input" name="username" type="text" placeholder="Username" id="username">
+              </div>
+              <div class="field">
+                <label for="password" style="font-size: 20px; margin-left:-260px; margin-bottom:5px ;">Mật khẩu</label>
+                <input class="input" name="user_password" type="password" placeholder="Password" id="password">
+              </div> <br>
+              <div class="field">
+                <button class="button">Login</button>
+              </div>
+              <span>Bạn chưa có tài khoản? <a href="./dangky.html" style="text-decoration: none">Đăng ký ngay</a></span> <br><br>
+          </form>
+          </div>
         </div>
         
         <div class="cart">
@@ -788,8 +811,17 @@
     </div>
   </footer>
   <script>
-    function reload() {
-      location.reload();
+    let modalBtn = document.getElementById("popup-btn");
+    let modal = document.querySelector(".popup");
+    // Hiển thị popup khi nhấp chuột vào button
+    modalBtn.onclick = function(){
+      modal.style.display = "block"
+    }
+    // Đóng khi nhấp chuột vào bất cứ khu vực nào trên màn hình
+    window.onclick = function(e){
+      if(e.target == modal){
+        modal.style.display = "none"
+      }
     }
   </script>
 </body>

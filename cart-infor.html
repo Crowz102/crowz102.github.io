@@ -28,9 +28,7 @@
                     <input type="text" class="form-search" placeholder="Nhập sản phẩm cần tìm" style="font-size: 20px; font-family: monospace;">
                 </div>
         
-                <div class="user">
-                    <a href="./dangnhap.html" style="width: 3em;"><img class="user-img" src="./assets/user.png" alt="user"></a>
-                </div>
+                
                 
                 <div class="cart">
                     <img class="cart-img" src="./assets/cart.png" alt="cart">
@@ -184,7 +182,15 @@
               </div>
   
               <div class="buttons">
-                <input class="button" type="button" value="Hoàn tất đơn hàng">
+                <button id="popup-btn">Hoàn tất đơn hàng</button>
+                <div class="popup">
+                  <div class="popup-content">
+                    <span class="close-btn">&times;</span>
+                    <img src="./assets/—Pngtree—green check mark icon flat_5253210.png" alt="cart-check" style="width:200px;">
+                    <p>Xác nhận thanh toán thành công</p>
+                    <p>Chúng tôi sẽ cung cấp sản phẩm, dịch vụ cho Quý khách ngay khi đã xác nhận thông tin đơn hàng.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </span>
@@ -192,7 +198,15 @@
 			</div>
 		</div>
 	</div>
-  
+
+  <!-- <button id="popup-btn"> Liên hệ </button>
+  <div class="popup">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <p>Bạn cần tư vấn hãy liên hệ với chúng tôi</p>
+    </div>
+  </div> -->
+
     <footer id="footer">
         <div class="container">
           <div class="noi-dung about">
@@ -235,8 +249,30 @@
               </li>
               <li></li>
             </ul>
-          </div>
         </div>
-      </footer>
+      </div>
+    </footer>
+
+    <script>
+      let modalBtn = document.getElementById("popup-btn");
+      let modal = document.querySelector(".popup");
+      let closeBtn = document.querySelector(".close-btn");
+      // Hiển thị popup khi nhấp chuột vào button
+      modalBtn.onclick = function(){
+      modal.style.display = "block"
+      }
+      // Đóng popup khi ấn vào nút đóng
+      closeBtn.onclick = function(){
+      modal.style.display = "none"
+      }
+      // Đóng khi nhấp chuột vào bất cứ khu vực nào trên màn hình
+      window.onclick = function(e){
+      if(e.target == modal){
+      modal.style.display = "none"
+      }
+      }
+    </script>
+    
+    
 </body>
 </html>
