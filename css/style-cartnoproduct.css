@@ -46,19 +46,20 @@ body {
     height: 5em;
 }
 .page1{
-    margin: 0.9em 0.9em 0.9em 1em;
+    margin: 0.9em 0.3em 0.9em 1em;
+    text-decoration: none;
 }
 
 .page2{
-    margin: 0.9em 0.9em 0.9em 1em;
+    margin: 0.9em 0.3em 0.9em 1em;
 }
 
 .page3{
-    margin: 0.9em 0.9em 0.9em 1em;
+    margin: 0.9em 0.3em 0.9em 1em;
 }
 
 .page4{
-    margin: 0.9em 0.9em 0.9em 1em;
+    margin: 0.9em 0.3em 0.9em 1em;
 }
 
 .search, .form-search{

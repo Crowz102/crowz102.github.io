@@ -48,19 +48,20 @@ html{
     height: 5em;
 }
 .page1{
-    margin: 0.9em 0.9em 0.9em 1em;
+    margin: 0.9em 0.3em 0.9em 1em;
+    text-decoration: none;
 }
 
 .page2{
-    margin: 0.9em 0.9em 0.9em 1em;
+    margin: 0.9em 0.3em 0.9em 1em;
 }
 
 .page3{
-    margin: 0.9em 0.9em 0.9em 1em;
+    margin: 0.9em 0.3em 0.9em 1em;
 }
 
 .page4{
-    margin: 0.9em 0.9em 0.9em 1em;
+    margin: 0.9em 0.3em 0.9em 1em;
 }
 
 .search, .form-search{
@@ -131,12 +132,6 @@ img {
     flex-direction: column;
 }
 
-@media screen and (max-width: 996px) {
-    .preview {
-        margin-bottom: 20px;
-    }
-}
-
 .preview-pic {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
@@ -186,30 +181,7 @@ img {
     line-height: 1.5em;
 }
 
-@media screen and (max-width: 997px) {
-    .wrapper {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-    }
 
-    .header {
-        height: 150px;
-    }
-
-    .search, .form-search{
-        left: 3.5em;
-    }
-
-    .form-search{
-        width: 100%;
-    }
-
-    .content{
-        margin-top: -2.5em;
-    }
-}
 .details {
     display: -webkit-box;
     display: -webkit-flex;
@@ -511,18 +483,180 @@ footer .container .noi-dung.about p{
     margin-left: -5px;
 }
 
-@media  (max-width: 656px){
+@media screen and (max-width: 450px){
+
+    .header{
+        position: fixed;
+        width: 100vw;
+        height: 9.8em;
+    }
+    
+    .main-header{
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+    }
+
+    .content{
+        display: none;
+    }
+
+    .search{
+        position: relative;
+        margin: 5em -29.8em;
+        width: 160%;
+    }
+
+    .slideshow{
+        display: none;
+    }
+
+    .home-product {
+        margin-top: 150px;
+        margin-bottom: 10px;
+        margin-left: 3em;
+    }
+    
+    
+    .home-product-item {
+        background-color: white;
+        margin-top: 10px;
+        position: relative;
+        border-radius: 2px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+        transition: transform linear 0.1s;
+        will-change: transform;
+        display:block;
+        text-decoration: none;
+        padding-bottom: 6px;
+        width: 20em;
+    }
+    
+    
+    .home-product-item:hover {
+        box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.5);
+        transform:translateY(-1px);
+    }
+    
+    .home-product-item__img {
+        padding-top: 100%;
+        background-size:contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+    }
+    
+    .home-product-item__name {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #666;
+        line-height: 1.8rem;
+        height: 3.6rem;
+        margin: 10px 10px 6px;
+        overflow: hidden;
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+    
+    .home-product-item__price {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+    
+    .home-product-item__price-old {
+        font-size: 1.4rem;
+        margin-left:10px;
+        color: #666;
+        text-decoration: line-through;
+    }
+    
+    .home-product-item__price-current {
+        font-size: 1.6rem;
+        color: rgb(230, 26, 26);
+        margin-left: 10px;
+        font-weight: bold;
+        font-family: roboto, arial, helvetica;
+    }
+    
+    
+    .home-product-item__origin {
+        display: flex;
+        justify-content: space-between;
+        margin: 3px 10px 0;
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: #595959;
+    }
+    
+    .home-product-item__brand{
+        font-family: monospace;
+        font-size: 1.1rem;
+    }
+
+    .grid__row{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .best-product{
+        width: auto;
+        background-color: #000;
+        padding: 15px;
+        color: #fff;
+        margin-right: 1.6em;
+        font-family: monospace;
+        font-weight: bold;
+    }
+
+    label{
+        font-size: 1.1rem;
+    }
+
     footer{
-        padding: 40px;
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 50px 100px;
+        background: #111;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     footer .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         flex-direction: column;
     }
+    
     footer .container .noi-dung{
-        margin-right: 0;
-        margin-bottom: 40px;
+        margin-left: -20px;
     }
-    footer .container, .noi-dung.about, .links, .contact{
-        width: 100%;
+    
+    footer  .container .noi-dung.about{
+        width:100%;
     }
+
+    footer  .container .noi-dung.links{
+        width:100%;
+    }
+
+    footer  .container .noi-dung.contact{
+        width:100%;
+    }
+    
+    footer .container .noi-dung.about h2{
+        position: relative;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    
 }
