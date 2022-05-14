@@ -450,40 +450,16 @@ footer .container .noi-dung.about p{
     margin-left: -5px;
 }
 
-@media  (max-width: 656px){
-    header {
-        height: 10em;
-    }
 
-    footer{
-        padding: 40px;
-    }
-    footer .container{
-        flex-direction: column;
-    }
-    footer .container .noi-dung{
-        margin-right: 0;
-        margin-bottom: 40px;
-    }
-    footer .container, .noi-dung.about, .links, .contact{
-        width: 100%;
-    }
-
-    .header {
+@media screen and (max-width: 450px){
+    .header{
         height: 150px;
     }
 
-    .search, .form-search{
-        left: 3.5em;
+    .main-header{
+        height: 100%;
     }
-
-    .form-search{
-        width: 97%;
-    }
-
-    .content{
-        margin-top: -2.5em;
-    }
+    
 }
 
 .best-product{
