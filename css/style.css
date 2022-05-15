@@ -8,8 +8,12 @@ body {
     background-color: #EFEFEF;
     display: flex;
     justify-content: flex-end;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     flex-direction: column;
+}
+.container{
+    position: relative;
+    z-index: 1;
 }
 
 .header{
@@ -68,10 +72,11 @@ body {
     margin-top: 7px;
     float: left;
     left: 35%;
+    display: flex;
 }
 
 .form-search{
-    padding: 10px;
+    padding: 10px 10px 10px 40px;
     border-radius: 5px;
     outline: none;
 }
@@ -194,6 +199,137 @@ button:hover {
     width: 80%;
     margin-top: 0.7em;
 }
+
+
+.loading {
+    text-align: center;
+    background: #F4F6FB;
+    height: 1080px;
+    
+}
+
+section {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: center;
+    margin-top: 15%;
+}
+
+@media only screen and (max-width: 450px) {
+    .loading{
+        display: none;
+    }
+}
+
+.loader {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 75px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.loader-17 .css-square { 
+    position: absolute;
+    top: 50%;
+    width: 25px; height: 7px;
+    background: black;
+    -webkit-box-shadow: 2px 2px 3px 0px black;
+            box-shadow: 2px 2px 3px 0px black;
+ }
+
+  
+.loader-17 .square1 {
+      left: 70px;
+      -webkit-animation: dominos 1s 0.125s ease infinite;
+      animation: dominos 1s 0.125s ease infinite;
+}
+  
+.loader-17 .square2 {
+      left: 60px;
+      -webkit-animation: dominos 1s 0.3s ease infinite;
+      animation: dominos 1s 0.3s ease infinite;
+}
+  
+.loader-17 .square3 {
+      left: 50px;
+      -webkit-animation: dominos 1s 0.425s ease infinite;
+      animation: dominos 1s 0.425s ease infinite;
+}
+  
+.loader-17 .square4 {
+      left: 40px;
+      -webkit-animation: dominos 1s 0.540s ease infinite;
+      animation: dominos 1s 0.540s ease infinite;
+}
+  
+.loader-17 .square5 {
+      left: 30px;
+      -webkit-animation: dominos 1s 0.665s ease infinite;
+      animation: dominos 1s 0.665s ease infinite;
+}
+  
+.loader-17 .square6 {
+      left: 20px;
+      -webkit-animation: dominos 1s 0.79s ease infinite;
+      animation: dominos 1s 0.79s ease infinite;
+}
+  
+.loader-17 .square7 {
+      left: 10px;
+      -webkit-animation: dominos 1s 0.9s ease infinite;
+      animation: dominos 1s 0.9s ease infinite;
+}
+  
+.loader-17 .square8 {
+      left: 0px;
+      -webkit-animation: dominos 1s 1s ease infinite;
+      animation: dominos 1s 1s ease infinite;
+}    
+
+@-webkit-keyframes dominos {
+    50% { opacity: 0.7; }
+    75% { -webkit-transform: rotate(90deg); transform: rotate(90deg); }
+    80% { opacity: 1; } 
+}
+      
+  
+@keyframes dominos {
+    50% { opacity: 0.7; }
+    75% { -webkit-transform: rotate(90deg); transform: rotate(90deg); }
+    80% { opacity: 1; } 
+}
+
+.loading {
+    -moz-animation: cssAnimation 1s ease-in 3s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 1s ease-in 3s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 1s ease-in 3s forwards;
+    /* Opera */
+    animation: cssAnimation 1s ease-in 3s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+
+
 
 .slideshow{
     overflow: hidden;
@@ -475,8 +611,8 @@ footer .container .noi-dung.about p{
     }
 
     .search{
-        position: relative;
-        margin: 5em -29.8em;
+        /* position: relative; */
+        margin: 5em -87%;
         width: 160%;
     }
 
@@ -485,7 +621,7 @@ footer .container .noi-dung.about p{
     }
 
     .home-product {
-        margin-top: 150px;
+        margin-top:  150px;
         margin-bottom: 10px;
         margin-left: 3em;
     }
@@ -499,7 +635,7 @@ footer .container .noi-dung.about p{
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
         transition: transform linear 0.1s;
         will-change: transform;
-        display:block;
+        display:flex;
         text-decoration: none;
         padding-bottom: 6px;
         width: 20em;
@@ -570,23 +706,32 @@ footer .container .noi-dung.about p{
         font-size: 1.1rem;
     }
 
-    .grid__row{
+    .grid__row {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        margin-left: -5px;
+        margin-left: -26px;
         margin-right: -5px;
     }
+    
+    .grid__column-2-4 {
+        padding-left: 5px;
+        padding-right: px;
+        width:0;
+    }
 
-    .best-product{
+    .best-product {
         width: auto;
         background-color: #000;
         padding: 15px;
+        font-size: 27px;
         color: #fff;
-        margin-right: 1.6em;
+        margin-right: -40%;
         font-family: monospace;
         font-weight: bold;
+        margin-left: -2%;
     }
+    
 
     label{
         font-size: 1.1rem;
@@ -610,19 +755,22 @@ footer .container .noi-dung.about p{
     }
     
     footer .container .noi-dung{
-        margin-left: -20px;
+        margin-left: -30px;
     }
     
     footer  .container .noi-dung.about{
         width:100%;
+        font-size: 20px;
     }
 
     footer  .container .noi-dung.links{
         width:100%;
+        font-size: 20px;
     }
 
     footer  .container .noi-dung.contact{
         width:100%;
+        font-size: 20px;
     }
     
     footer .container .noi-dung.about h2{
