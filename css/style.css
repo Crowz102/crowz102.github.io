@@ -605,7 +605,7 @@ footer .container .noi-dung.about p{
     
     .header{
         position: fixed;
-        width: 100vw;
+        width: 100%;
         height: 9.8em;
     }
     
@@ -740,15 +740,14 @@ footer .container .noi-dung.about p{
     }
 
     .best-product {
-        width: auto;
+        width: 98%;
         background-color: #000;
-        padding: 15px;
+        padding: 1px;
         font-size: 27px;
         color: #fff;
-        margin-right: -40%;
+        margin-right: 1.6em;
         font-family: monospace;
         font-weight: bold;
-        margin-left: -2%;
     }
     
 
@@ -758,7 +757,7 @@ footer .container .noi-dung.about p{
 
     footer{
         position: relative;
-        width: 100%;
+        width: 110%;
         height: auto;
         padding: 50px 100px;
         background: #111;
@@ -779,17 +778,17 @@ footer .container .noi-dung.about p{
     
     footer  .container .noi-dung.about{
         width:100%;
-        font-size: 20px;
+        font-size: 15px;
     }
 
     footer  .container .noi-dung.links{
         width:100%;
-        font-size: 20px;
+        font-size: 15px;
     }
 
     footer  .container .noi-dung.contact{
         width:100%;
-        font-size: 20px;
+        font-size: 15px;
     }
     
     footer .container .noi-dung.about h2{
