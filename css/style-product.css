@@ -487,7 +487,7 @@ footer .container .noi-dung.about p{
 
     .header{
         position: fixed;
-        width: 100vw;
+        width: 100%;
         height: 9.8em;
     }
     
@@ -502,8 +502,8 @@ footer .container .noi-dung.about p{
     }
 
     .search{
-        position: relative;
-        margin: 5em -29.8em;
+        /* position: relative; */
+        margin: 5em -87%;
         width: 160%;
     }
 
@@ -615,13 +615,22 @@ footer .container .noi-dung.about p{
         font-weight: bold;
     }
 
+    .card{
+        width: 140%;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     label{
         font-size: 1.1rem;
     }
 
     footer{
         position: relative;
-        width: 100%;
+        width: 142%;
         height: auto;
         padding: 50px 100px;
         background: #111;
