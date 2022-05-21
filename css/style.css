@@ -52,16 +52,48 @@ body {
     text-decoration: none;
 }
 
-.page2{
-    margin: 0.9em 0.3em 0.9em 1em;
+.nut_dropdown {
+    background-color: #000;
+    color: white;
+    padding: 14px;
+    
+    font-size: 27px; 
+    font-weight: bold;
+    font-family: monospace;
+    border: none;
+}
+
+.nut_dropdown:hover, .nut_dropdown:focus{
+    background-color: #000;
+}
+
+.noidung_dropdown {
+    /*Ẩn nội dụng các đường dẫn*/
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+    z-index: 1;
+}
+
+.noidung_dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.hienThi{
+    display:block;
 }
 
 .page3{
-    margin: 0.9em 0.3em 0.9em 1em;
+    margin: 0.9em 0.3em 0.9em 0.5em;
 }
 
 .page4{
-    margin: 0.9em 0.3em 0.9em 1em;
+    margin: 0.9em 0.3em 0.9em 0.5em;
 }
 
 .search, .form-search{
@@ -724,7 +756,7 @@ footer .container .noi-dung.about p{
         width:0;
     }
 
-    .best-product {
+    #best-product {
         width: auto;
         background-color: #000;
         padding: 15px;
@@ -786,7 +818,7 @@ footer .container .noi-dung.about p{
     
 }
 
-.best-product{
+#best-product{
     width: auto;
     background-color: #000;
     padding: 15px;
@@ -797,19 +829,7 @@ footer .container .noi-dung.about p{
     font-weight: bold;
 }
 
-.best-seller{
-    width: auto;
-    background-color: #000;
-    padding: 15px;
-    font-size: 27px;
-    color: #fff;
-    margin-right: 1.6em;
-    margin-top: 0.5em;
-    font-family: monospace;
-    font-weight: bold;
-}
-
-.gaming{
+#best-seller{
     width: auto;
     background-color: #000;
     padding: 15px;
@@ -821,7 +841,7 @@ footer .container .noi-dung.about p{
     font-weight: bold;
 }
 
-.office{
+#gaming{
     width: auto;
     background-color: #000;
     padding: 15px;
@@ -833,7 +853,19 @@ footer .container .noi-dung.about p{
     font-weight: bold;
 }
 
-.workstation{
+#office{
+    width: auto;
+    background-color: #000;
+    padding: 15px;
+    font-size: 27px;
+    color: #fff;
+    margin-right: 1.6em;
+    margin-top: 0.5em;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+#workstation{
     width: auto;
     background-color: #000;
     padding: 15px;

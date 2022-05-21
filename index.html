@@ -7,24 +7,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-latest.js"></script>
-  <link rel="shortcut icon" href="./assets/favicon-16x16.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/facebookdl3.png" type="image/x-icon">
   <title>DTD Store</title>
 </head>
 <body class="preloading">
-  <!-- <div class="loading">
-    <section>
-        <div class="loader loader-17">
-          <div class="css-square square1"></div>
-          <div class="css-square square2"></div>
-          <div class="css-square square3"></div>
-          <div class="css-square square4"></div>
-          <div class="css-square square5"></div>
-          <div class="css-square square6"></div>
-          <div class="css-square square7"></div>
-          <div class="css-square square8"></div>
-        </div>
-    </section>
-  </div> -->
   <div id="preload" class="preload-container text-center">
     <section>
       <div class="loader loader-17">
@@ -48,7 +34,17 @@
 
         <div class="content">
           <a href="https://crowz102.github.io/" style="text-decoration: none"><h3 class="page1" style="color: #fff; font-size:27px; font-family: monospace;">Trang Chủ</h3></a>
-          <h3 class="page2" style="color: #fff; font-size:27px; font-family: monospace;">Sản Phẩm</h3>
+          <div class="dropdown">
+            <button onclick="hamDropdown()" class="nut_dropdown">Sản Phẩm</button>
+            <div class="noidung_dropdown">
+              <a href="#best-product">Sản Phẩm Nổi Bật</a>
+              <a href="#best-seller">Sản Phẩm Bán Chạy</a>
+              <a href="#gaming">Laptop Gaming</a>
+              <a href="#office">Laptop Văn Phòng</a>
+              <a href="#workstation">Laptop Workstation</a>
+
+            </div>
+          </div>
           <a href="https://genk.vn/" style="text-decoration: none" target="_blank"><h3 class="page3" style="color: #fff; font-size:27px; font-family: monospace;">Tin Tức</h3></a>
           <a href="#footer" style="text-decoration: none"><h3 class="page4" style="color: #fff; font-size:27px; font-family: monospace;">Giới Thiệu</h3></a>
         </div>
@@ -119,7 +115,7 @@
   <br>
 
   <div class="home-product">
-    <div class="best-product">
+    <div id="best-product">
       <label for="best-product">&#11088;SẢN PHẨM NỔI BẬT</label>
     </div>
     <div class="grid__row">
@@ -310,7 +306,7 @@
         </div>
       </div>
 
-      <div class="best-seller">
+      <div id="best-seller">
         <label for="best-seller">&#128293;SẢN PHẨM BÁN CHẠY</label>
       </div>
       <div class="grid__row">
@@ -501,7 +497,7 @@
         </div>
       </div>
 
-      <div class="gaming">
+      <div id="gaming">
         <label for="gaming">LAPTOP GAMING </label>
       </div>
       <div class="grid__row">
@@ -601,7 +597,7 @@
         </div>
       </div>
 
-      <div class="office">
+      <div id="office">
         <label for="office">LAPTOP VĂN PHÒNG</label>
       </div>
       <div class="grid__row">
@@ -700,7 +696,7 @@
         </div>
       </div>
 
-      <div class="workstation">
+      <div id="workstation">
         <label for="workstation">LAPTOP WORKSTATION</label>
       </div>
       <div class="grid__row">
@@ -861,6 +857,19 @@
           $('body').removeClass('preloading');
       });
     });
+
+    function hamDropdown() {
+      document.querySelector(".noidung_dropdown").classList.toggle("hienThi");
+    }
+
+    window.onclick = function(e) {
+      if (!e.target.matches('.nut_dropdown')) {
+      var noiDungDropdown = document.querySelector(".noidung_dropdown");
+        if (noiDungDropdown.classList.contains('hienThi')) {
+          noiDungDropdown.classList.remove('hienThi');
+        }
+      }
+    }
   </script>
 
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
