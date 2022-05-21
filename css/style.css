@@ -76,7 +76,7 @@ body {
 }
 
 .form-search{
-    padding: 10px 10px 10px 40px;
+    padding: 10px;
     border-radius: 5px;
     outline: none;
 }
@@ -605,7 +605,7 @@ footer .container .noi-dung.about p{
     
     .header{
         position: fixed;
-        width: 100%;
+        width: 100vw;
         height: 9.8em;
     }
     
@@ -729,8 +729,8 @@ footer .container .noi-dung.about p{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        margin-left: -26px;
-        margin-right: -5px;
+        margin-left: -23px;
+        margin-right: 6px;
     }
     
     .grid__column-2-4 {
@@ -740,14 +740,15 @@ footer .container .noi-dung.about p{
     }
 
     .best-product {
-        width: 98%;
+        width: auto;
         background-color: #000;
-        padding: 1px;
+        padding: 15px;
         font-size: 27px;
         color: #fff;
-        margin-right: 1.6em;
+        margin-right: -40%;
         font-family: monospace;
         font-weight: bold;
+        margin-left: -2%;
     }
     
 
@@ -757,7 +758,7 @@ footer .container .noi-dung.about p{
 
     footer{
         position: relative;
-        width: 110%;
+        width: 100%;
         height: auto;
         padding: 50px 100px;
         background: #111;
@@ -778,17 +779,17 @@ footer .container .noi-dung.about p{
     
     footer  .container .noi-dung.about{
         width:100%;
-        font-size: 15px;
+        font-size: 20px;
     }
 
     footer  .container .noi-dung.links{
         width:100%;
-        font-size: 15px;
+        font-size: 20px;
     }
 
     footer  .container .noi-dung.contact{
         width:100%;
-        font-size: 15px;
+        font-size: 20px;
     }
     
     footer .container .noi-dung.about h2{
